@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Classes from "../../sass/Headers.module.scss";
 import {
   Ruvid,
@@ -12,9 +12,15 @@ import {
 } from "../../components/export/Export";
 
 const Header = ({ setCartIsShown, isMobile, setshowCart, setShowCart }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const toggleCart = () => {
     setShowCart((prevValue) => !prevValue);
     setCartIsShown((prevValue) => !prevValue);
+  };
+
+  const toggleModal = () => {
+    setIsModalOpen((prev) => !prev);
   };
 
   return (
@@ -52,6 +58,7 @@ const Header = ({ setCartIsShown, isMobile, setshowCart, setShowCart }) => {
             src={Back}
             alt="Dropdown Icon"
             className={Classes["dropdown-icon"]}
+            onClick={toggleModal}
           />
           <img
             src={Cart}
@@ -68,6 +75,18 @@ const Header = ({ setCartIsShown, isMobile, setshowCart, setShowCart }) => {
           )}
         </div>
       </header>
+      {isModalOpen && (
+        <div className={Classes.modalOverlay} onClick={toggleModal}>
+          <div
+            className={Classes.modalContent}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <p className={Classes.modalItem}>Explore</p>
+            <p className={Classes.modalItem}>Cart</p>
+            <p className={Classes.modalItem}>Wishlist</p>
+          </div>
+        </div>
+      )}
     </>
   );
 };
