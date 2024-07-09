@@ -1,0 +1,35 @@
+.categories > h2 {
+  padding: 1rem;
+  font-weight: 500;
+}
+
+.imageCategory {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em;
+}
+.imageCategory div p {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.imageCategory div p:hover {
+  color: #ff7e08;
+  transition: 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 450px) {
+  .imageCategory {
+    padding: 0.8em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .imageCategory {
+    padding: 1.5em;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .categories {
+    display: none;
+  }
+}

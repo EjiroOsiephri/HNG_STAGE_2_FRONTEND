@@ -2,13 +2,23 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 90%;
+  width: 98%;
   margin: 0 auto;
   padding: 1px 20px;
   background-color: #ffffff;
 
   .logo {
     width: 85px;
+  }
+  .cart-icon:active {
+    background-color: orange;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+  }
+  .cartText {
+    letter-spacing: 1.2px;
+    font-weight: 500;
   }
 
   p {
@@ -55,6 +65,14 @@
     align-items: flex-start;
     height: auto;
     padding: 10px;
+
+    .cartText {
+      display: none;
+    }
+
+    span {
+      font-size: 13px;
+    }
 
     .search-icon {
       margin: 0 5px;
@@ -154,4 +172,7 @@
   .ruvid-store-header {
     width: 100%;
   }
+}
+hr {
+  width: 100%;
 }

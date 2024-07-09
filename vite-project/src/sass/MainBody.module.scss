@@ -1,0 +1,56 @@
+.main-body {
+  width: 80%;
+  display: flex;
+  gap: 80px;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 4.7rem;
+}
+.carousel-item {
+  position: relative;
+
+  img {
+    width: 891px;
+    height: 401px;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+  .legend {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
+.textSection p {
+  padding: 0.5rem;
+  width: 50%;
+  max-height: 350px;
+  white-space: nowrap;
+}
+.textSection p:hover {
+  color: #ff7e08;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.main-body > div {
+  border-right: 1px solid gray;
+  margin-right: -50px;
+}
+hr {
+  position: relative;
+  top: 40px;
+  width: 80%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .main-body,
+  .main-body > div,
+  hr {
+    display: none;
+  }
+}

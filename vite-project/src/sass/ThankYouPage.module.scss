@@ -1,0 +1,22 @@
+.thankYouPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+
+  h1 {
+    font-size: 36px;
+    color: #ff6f61;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    color: #333;
+  }
+}

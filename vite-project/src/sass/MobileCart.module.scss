@@ -1,0 +1,153 @@
+.mobile-cart-container {
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+  background-color: #fff;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .back-icon {
+      cursor: pointer;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .love-icon {
+      cursor: pointer;
+    }
+  }
+
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    img {
+      width: 120px;
+      height: 120px;
+      margin-right: 15px;
+    }
+
+    .item-details {
+      flex: 1;
+
+      h3 {
+        font-weight: 400;
+        margin: 0 0 5px;
+        font-size: 16px;
+      }
+
+      p {
+        margin: 5px 0;
+        color: #777;
+      }
+
+      .remove {
+        color: orange;
+        cursor: pointer;
+        margin-top: 5px;
+      }
+    }
+
+    .price {
+      font-size: 16px;
+    }
+
+    .quantity {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+
+      div {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ddd;
+        cursor: pointer;
+      }
+
+      span {
+        margin: 0 10px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .remove {
+    font-size: 12px;
+    color: orange;
+  }
+
+  .remove img {
+    width: 10px;
+    height: 10px;
+  }
+
+  .cart-summary,
+  .order-summary {
+    margin-top: 20px;
+
+    h3 {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+
+    .summary-value {
+      font-size: 16px;
+      text-align: right;
+    }
+  }
+
+  .order-summary {
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .checkout-button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+
+    &:hover {
+      background-color: darkorange;
+    }
+  }
+}
+
+.quantity > div {
+  background-color: #ff7e08;
+  color: white;
+}
+.quantity > div:first-child {
+  background: #ff7e084f;
+}
+.summary-row h3 {
+  color: #ff7e08;
+}
+.order-summary p {
+  padding: 1.2rem 0;
+}
+.cart-summary h3 {
+  margin-top: 1rem;
+}
+.header > h1 {
+  cursor: pointer;
+}
